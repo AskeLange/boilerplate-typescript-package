@@ -13,12 +13,7 @@ jobs:
     release-please:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-            with:
-                node-version: 20
-        - run: pnpm build
-		- uses: google-github-actions/release-please-action@v4
-			with:
-				token: ${{ secrets.GITHUB_TOKEN }}
-				release-type: node
+            - uses: google-github-actions/release-please-action@v4
+                with:
+                    token: ${{ secrets.GITHUB_TOKEN }}
+                    release-type: node
