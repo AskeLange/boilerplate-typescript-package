@@ -15,6 +15,7 @@ A personal boilerplate for creating standalone typescript packages.
 ## Getting started
 
 - Start by adding a `NPM_TOKEN` as a repository secret in your GitHub repository.
+- Check the setting "Allow GitHub Actions to create and approve pull requests" in the repository settings under "Actions".
 - Replace `__name__` in the `package.json` file, with the package name.
 - Run `pnpm install`
 - Run `pnpm build`
