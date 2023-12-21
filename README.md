@@ -20,8 +20,7 @@ Before starting development on the package, there's a few steps that must be com
 - Allow GitHub actions to create pull-request by going to Settings > Actions.
 - Replace `__name__` in the `package.json` file, with the package name.
 
-All the source code should be placed in the `src` folder, with an `index.ts` as the entry point (an example is included in the boilerplate).<br />
-If creating a CLI some changes might be needed to the structure of this template.
+All the source code should be placed in the `src` folder, with an `index.ts` as the entry point (an example is included in the boilerplate).
 
 <br />
 
