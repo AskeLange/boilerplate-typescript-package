@@ -1,0 +1,40 @@
+{
+	"name": "@askelange/__name__",
+	"version": "0.0.0",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"main": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/askelange/__name__.git"
+	},
+	"scripts": {
+		"lint": "prettier --write --list-different . && eslint --ext \".ts,.vue\" . --fix",
+		"dev": "pnpm build && echo && node dev/index.mjs",
+		"build": "tsup"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^18.4.3",
+		"@types/node": "^20.10.5",
+		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/parser": "^6.15.0",
+		"commitlint": "^18.4.3",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0",
+		"prettier": "^3.1.1",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3"
+	}
+}
